@@ -1,0 +1,57 @@
+[
+    {
+        "company": "Apple",
+        "title": "Iphone 14 Promax",
+        "price": "55.000",
+        "image_path": "https://mobizil.com/wp-content/uploads/2022/09/Apple-iPhone-14-Pro-Max.jpg",
+        "rating": 5,
+        "isnew": true,
+        "type": "Phone",
+        "color": "blue",
+        "isvisible": true
+    },
+    {
+        "company": "Apple",
+        "title": "Iphone 12 Promax",
+        "price": "25.000",
+        "image_path": "https://mobizil.com/wp-content/uploads/2020/10/Apple-iPhone-12-Pro-Max.jpg",
+        "rating": 2,
+        "isnew": false,
+        "type": "Phone",
+        "color": "blue",
+        "isvisible": false
+    },
+    {
+        "company": "Apple",
+        "title": "Iphone 13 Promax",
+        "price": "35.000",
+        "image_path": "https://mobzel.com/wp-content/uploads/2021/01/iphone-13-pro-max-specs-1-1.jpg",
+        "rating": 4.5,
+        "isnew": true,
+        "type": "Phone",
+        "color": "blue",
+        "isvisible": true
+    },
+    {
+        "company": "Apple",
+        "title": "Iphone 13",
+        "price": "30.000",
+        "image_path": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/95/775822/1.jpg?9570",
+        "rating": 3,
+        "isnew": false,
+        "type": "Phone",
+        "color": "blue",
+        "isvisible": true
+    },
+    {
+        "company": "Apple",
+        "title": "Iphone 11",
+        "price": "15.000",
+        "image_path": "https://m.media-amazon.com/images/I/41bSNpRGTBS.jpg",
+        "rating": 3,
+        "isnew": false,
+        "type": "Phone",
+        "color": "blue",
+        "isvisible": true
+    }
+]

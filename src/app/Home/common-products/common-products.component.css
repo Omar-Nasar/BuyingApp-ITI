@@ -1,0 +1,17 @@
+.row {
+    margin: 100px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+}
+
+.col {
+    transition: transform .2s;
+}
+
+.col:hover {
+    cursor: default;
+    transform: scale(1.05);
+}

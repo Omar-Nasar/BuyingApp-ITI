@@ -1,0 +1,78 @@
+.logo {
+    color: #f08804;
+    font-weight: 500px;
+    font-size: 28px;
+}
+
+.nav-logo {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.nav-logo:hover {
+    cursor: default;
+}
+
+.navbar {
+    background-color: #232f3e;
+}
+
+.dash {
+    color: #ac5f01;
+}
+
+.nav-link,
+a {
+    color: white;
+    font-family: 'Tahoma';
+    font-size: 17px;
+
+}
+.spec {
+    margin-left: 1rem;
+    margin-top: 5px;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-link:focus {
+    color: orange;
+}
+
+.btn {
+    margin-right: 1rem;
+    border-color: #0169bf;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0169bf;
+}
+
+.bi {
+    color: #f08804;
+}
+
+.badge {
+    border-color: white;
+    background-color: #f08804;
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #232f3e;
+    width: auto;
+}
+
+.dropdown-item:hover {
+    background-color: #ac5f01;
+    color: white;
+}

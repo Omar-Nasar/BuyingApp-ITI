@@ -1,0 +1,24 @@
+.page-wrap {
+    min-height: 80vh;
+    color: #232f3e;
+}
+
+.btn {
+    background: none #f08804;
+    color: #ffffff;
+    font-size: 20px;
+    fill: #ffffff;
+    box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    background: none rgb(189, 124, 3);
+    color: #ffffff;
+    box-shadow: 1px 6px 13px rgba(255, 149, 43, 0.258)
+}
+p{
+    color:#232f3e;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

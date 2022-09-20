@@ -1,0 +1,46 @@
+<div>
+    <nav class="navbar navbar-expand-lg">
+        <a class="nav-logo navbar-btand" [routerLink]="'/'"><span class="logo">Buy<span class="dash">-</span></span>ing
+            <img src="assets/buying_logo.png" width="45px">
+        </a>
+        <button ngbDropdown class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="bi bi-menu-button-wide"></i></button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link spec" [routerLink]="'/'">Home</a></li>
+                <li ngbDropdown class="nav-item dropdown">
+                    <a ngbDropdownToggle class="nav-link spec dropdown-toggle" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Electronics
+                    </a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a ngbDropdownItem class="dropdown-item" [routerLink]="'/smartwatches'">Smart Watches</a>
+                        <a ngbDropdownItem class="dropdown-item" [routerLink]="'/phones'">Phones</a>
+                        <a ngbDropdownItem class="dropdown-item" [routerLink]="'/tvs'">Tvs</a>
+                    </div>
+                </li>
+                <li ngbDropdown class="nav-item dropdown">
+                    <a ngbDropdownToggle class="nav-link spec dropdown-toggle" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a ngbDropdownItem class="dropdown-item" [routerLink]="'/apple'">Apple</a>
+                        <a ngbDropdownItem class="dropdown-item" [routerLink]="'/samsung'">Samsung</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link spec" [routerLink]="'/aboutus'">About Us</a></li>
+
+            </ul>
+            <a [routerLink]="'/cart'">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi bi-cart-dash-fill me-1"></i>
+                    Cart
+                    <span class="badge text-white ms-1 rounded-pill">{{CartCount}}</span>
+                </button>
+            </a>
+
+        </div>
+    </nav>
+</div>
