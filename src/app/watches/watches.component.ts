@@ -21,8 +21,13 @@ export class WatchesComponent implements OnInit {
     });
   }
   AddCart(product: any): void {
-    this.WatchServ.AddToCart(product);
-    NavigationBarComponent.CartNumber++;
-    alert('Adeed To Cart');
+    if (product.isvisible == true) {
+      this.WatchServ.AddToCart(product);
+      NavigationBarComponent.CartNumber++;
+      alert('Adeed To Cart');
+    }
+    else{
+      alert('Soory This Product Not Available Right Now');
+    }
   }
 }
