@@ -20,8 +20,13 @@ export class TvsComponent implements OnInit {
     });
   }
   AddCart(product: any): void {
-    this.TvServ.AddToCart(product);
-    NavigationBarComponent.CartNumber++;
-    alert("Adeed To Cart")
+    if (product.isvisible == true) {
+      this.TvServ.AddToCart(product);
+      NavigationBarComponent.CartNumber++;
+      alert('Adeed To Cart');
+    }
+    else{
+      alert('Soory This Product Not Available Right Now');
+    }
   }
 }
