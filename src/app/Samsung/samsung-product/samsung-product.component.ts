@@ -41,9 +41,14 @@ export class SamsungProductComponent implements OnInit {
     );
   }
   AddCart(product: any): void {
-    this.SamsungServ.AddToCart(product);
-    NavigationBarComponent.CartNumber++;
-    alert("Adeed To Cart")
+    if (product.isvisible == true) {
+      this.SamsungServ.AddToCart(product);
+      NavigationBarComponent.CartNumber++;
+      alert('Adeed To Cart');
+    }
+    else{
+      alert('Soory This Product Not Available Right Now');
+    }
   }
 
 }
