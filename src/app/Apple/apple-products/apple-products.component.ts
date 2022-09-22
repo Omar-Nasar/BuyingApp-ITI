@@ -13,21 +13,13 @@ export class AppleProductsComponent implements OnInit {
   private SearchValue: string = '';
   Products: Apple[] = [];
   AppleProducts: Apple[] = [];
-
-  company: String = '';
-  title: String = '';
-  price: String = '';
-  image_path: String = '';
-  rating: Number = 0;
-  isnew: Boolean = false;
-  type: String = '';
-  color: String = '';
-  isvisible: Boolean = false;
   constructor(private ProductsServ: ProductsService) {}
 
   ngOnInit(): void {
     this.ProductsServ.GetAppleData().subscribe({
       next: (prods) => {
+        console.log(prods);
+
         this.Products = prods;
         this.AppleProducts = this.Products;
       },
@@ -48,8 +40,13 @@ export class AppleProductsComponent implements OnInit {
     );
   }
   AddCart(product: any): void {
-    this.ProductsServ.AddToCart(product);
-    NavigationBarComponent.CartNumber++;
-    alert("Adeed To Cart")
+    if (product.isvisible == true) {
+      this.ProductsServ.AddToCart(product);
+      NavigationBarComponent.CartNumber++;
+      alert('Adeed To Cart');
+    }
+    else{
+      alert('Soory This Product Not Available Right Now');
+    }
   }
 }
