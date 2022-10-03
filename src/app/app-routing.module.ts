@@ -12,6 +12,7 @@ import { WatchesComponent } from './watches/watches.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'BuyingApp-ITI', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeHeaderComponent },
   { path: 'apple', component: AppleHeaderComponent },
   { path: 'samsung', component: SamsungHeaderComponent },
