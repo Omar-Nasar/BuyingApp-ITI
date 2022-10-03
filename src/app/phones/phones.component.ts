@@ -19,8 +19,13 @@ export class PhonesComponent implements OnInit {
     });
   }
   AddCart(product: any): void {
-    this.PhoneServ.AddToCart(product);
-    NavigationBarComponent.CartNumber++;
-    alert("Adeed To Cart")
+    if (product.isvisible == true) {
+      this.PhoneServ.AddToCart(product);
+      NavigationBarComponent.CartNumber++;
+      alert('Adeed To Cart');
+    }
+    else{
+      alert('Soory This Product Not Available Right Now');
+    }
   }
 }

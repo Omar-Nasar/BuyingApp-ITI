@@ -30,13 +30,6 @@ p {
     object-fit: fit;
 }
 
-
-.card:hover {
-    transform: scale(1.001);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
-}
-
-
 .btn {
     font-size: 1rem;
     font-weight: 500;

@@ -12,13 +12,13 @@ import { Component, OnInit } from '@angular/core';
 export class RatingComponent implements OnInit, OnChanges {
   @Input()
   rating!: any;
-  ClibWidth: any = 100;
+  ClibWidth: any = 75;
   @Output()
   message:EventEmitter<string> = new EventEmitter<string>()
 
   constructor() {}
   ngOnChanges(): void {
-    this.ClibWidth = (this.rating * 100) / 5;
+    this.ClibWidth = (this.rating * 75) / 5;
   }
   OnClick(){
     this.message.emit(`This Film Has Rating ${this.rating}`)

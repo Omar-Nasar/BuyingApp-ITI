@@ -93,50 +93,6 @@ app.get("/samsung/headphones", function (Request, Response) {
   });
 });
 
-// app.post("/samsung", function (Request, Response) {
-//   console.log("TEST");
-//   Product.find({ title: Request.body.productTitle }).then((data) => {
-//     let insertedProduct = new CartProduct({
-//       company: data[0].company,
-//       title: data[0].title,
-//       price: data[0].price,
-//       image_path: data[0].image_path,
-//       rating: data[0].rating,
-//       isnew: data[0].isnew,
-//       type: data[0].type,
-//       color: data[0].color,
-//       isvisible: data[0].isvisible,
-//     });
-
-//     insertedProduct.save().then(() => {
-//       console.log("Inserted");
-//     });
-//   });
-// });
-
-// app.post('/insert', (req, res) => {
-//   console.log(req.body);
-//   let ProdCart = new CartProduct({
-//     company: req.body.company,
-//     title: req.body.title,
-//     price: req.body.price,
-//     image_path: req.body.image_path,
-//     rating: req.body.rating,
-//     isnew: req.body.isnew,
-//     type: req.body.type,
-//     color: req.body.color,
-//     isvisible: req.body.isvisible
-//   })
-
-//   ProdCart.save().then(data => {
-//     console.log("Inserted");
-//     console.log(data);
-//   }).catch(err => {
-//     console.log("Not Added");
-//   })
-
-// })
-
 app.listen(6900, function () {
   console.log("Example app listening...");
 });

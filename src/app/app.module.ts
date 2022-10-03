@@ -52,7 +52,7 @@ import { NoProductsComponent } from './cart/no-products/no-products.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
